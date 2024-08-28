@@ -1,0 +1,126 @@
+ /* Reset default margins and paddings */
+ *  {
+    margin: 0;
+    padding: 0;
+ }
+ body {
+  background-image: url(img/images\ \(1\).jfif);
+  background-size: contain;
+ }
+ /*NAV*/
+ nav {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
+ }
+ nav p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 24px;
+  line-height: 45px;
+  float: left;
+  padding: 0px 20px;
+ }
+ nav ul {
+  float: left;
+ }
+ nav ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+
+ }
+ nav ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 12px;
+  padding: 22px 14px;
+  line-height: 8px;
+  text-decoration: none;
+
+ }
+ nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color:  plum;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+ }
+ nav ul li:hover ul  {
+  display: block;
+ }
+
+ nav ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+
+ }
+ nav ul li ul li a {
+  padding: 8px 14px;
+
+ }
+ nav ul li ul li a:hover {
+  background-color: purple;
+ }
+
+
+ /* Example 1*/
+ .img-test {
+ justify-content: space-around;
+    width: 500px;
+    height: 500px;
+    background-image: url(img/danfodiyo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+
+ }
+
+ .img-test:hover,
+ .img-test:hover ~ .img-test {
+    background-image: url(img/download.jfif);
+    transform: scale(1.2);
+    opacity: 0.7;
+ }
+ 
+
+ /* Example 2*/
+ .button-test {
+   display: block;
+   width: 128px;
+   height: 45px;
+   padding-left: 10px;
+   background-color: blue;
+   font-size: 20px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 600;
+   color: plum;
+   line-height: 60px;
+   text-decoration: none;
+   white-space: nowrap;
+   overflow: hidden;
+
+   transition: all 0.5 ease-in-out;
+   -webkit-transition: all 0.5s ease-in-out;
+   -moz-transition: all 0.5 ease-in-out;
+   -o-transition: all 0.5 ease-in-out;
+ }
+
+   
+
+ .button-test:hover {
+   width: 170px;
+   background-color: purple;
+   padding-left: 500px;
+ }
+ .button-test span {
+   padding-left: 30px;
+   color: white;
+   font-weight: 900;
+ }
